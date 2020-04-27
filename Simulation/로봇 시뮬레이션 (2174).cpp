@@ -4,7 +4,7 @@
 
 using namespace std;
 int dx[] = { 0,1,0,-1 };
-int dy[] = { 1,0,-1,0 }; // ºÏ,µ¿,³²,¼­
+int dy[] = { 1,0,-1,0 };
 int robotIdx[101];
 bool flag = false;
 int n, m;
