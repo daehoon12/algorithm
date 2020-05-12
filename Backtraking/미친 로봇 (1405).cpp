@@ -3,7 +3,7 @@
 using namespace std;
 bool map[31][31];
 int dx[] = { 1,-1,0,0 };
-int dy[] = { 0,0,-1,1 }; // 0 : µ¿, 1 :¼­, 2 : ³², 3 : ºÏ
+int dy[] = { 0,0,-1,1 }; // 0 : ë™, 1 : ì„œ, 2 :ë‚¨, 3 : 
 pair <int, double> dir[4];
 bool visit[4];
 int n;
@@ -15,7 +15,7 @@ void dfs(int cnt, int direct, double percent, int y, int x)
 		return;
 	}
 
-	map[y][x] = true; // Á¶ÇÕ
+	map[y][x] = true; // ÃÂ¶Ã‡Ã•
 	for (int i = 0; i < 4; i++)
 	{
 		if (map[dy[i] + y][dx[i] + x] == true)
