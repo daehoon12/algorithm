@@ -43,7 +43,7 @@ int main()
 	{
 		operationsNum += operations[i];
 	}
-	dfs(operations[0], operations[1], operations[2], operations[3], v[0],1);
+	dfs(operations[0], operations[1], operations[2], operations[3], v[0],1); 
 	cout << maxNum << '\n';
 	cout << minNum << '\n';
 	return 0;
