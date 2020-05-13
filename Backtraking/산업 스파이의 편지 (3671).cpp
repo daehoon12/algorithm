@@ -29,7 +29,7 @@ void backtracking(int cnt, string s, string temp)
 	if (temp != "")
 	{
 		int num = stoi(temp);
-		if (num > 1 && num < MAX && visitNum[num]==false)
+		if (num > 1 && num < MAX && visitNum[num]==false) // 유망성 체크
 		{
 			visitNum[num] = true;
 
