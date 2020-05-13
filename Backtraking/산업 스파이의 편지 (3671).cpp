@@ -10,9 +10,9 @@ using namespace std;
 int t;
 int answer = 0;
 
-void init()
+void init()  // 에라토스테네스의 체
 {
-	for (int i = 2; i < MAX; i++)
+	for (int i = 2; i < MAX; i++) 
 	{
 		if (numbers[i] == true)
 			continue;
