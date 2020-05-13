@@ -5,8 +5,8 @@ using namespace std;
 int n;
 int operations[4];
 vector<int> v;
-int minNum = 987654321;
-int maxNum = 0;
+int minNum = 1000000000;
+int maxNum = -1000000000;
 int operationsNum = 0;
 void dfs(int plus, int minus, int multiply, int divide, int sum, int cnt)
 {
@@ -43,7 +43,7 @@ int main()
 	{
 		operationsNum += operations[i];
 	}
-	dfs(operations[0], operations[1], operations[2], operations[3], v[0],1);
+	dfs(operations[0], operations[1], operations[2], operations[3], v[0],1); 
 	cout << maxNum << '\n';
 	cout << minNum << '\n';
 	return 0;

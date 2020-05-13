@@ -10,9 +10,9 @@ using namespace std;
 int t;
 int answer = 0;
 
-void init()
+void init()  // 에라토스테네스의 체
 {
-	for (int i = 2; i < MAX; i++)
+	for (int i = 2; i < MAX; i++) 
 	{
 		if (numbers[i] == true)
 			continue;
@@ -29,7 +29,7 @@ void backtracking(int cnt, string s, string temp)
 	if (temp != "")
 	{
 		int num = stoi(temp);
-		if (num > 1 && num < MAX && visitNum[num]==false)
+		if (num > 1 && num < MAX && visitNum[num]==false) // 유망성 체크
 		{
 			visitNum[num] = true;
 
