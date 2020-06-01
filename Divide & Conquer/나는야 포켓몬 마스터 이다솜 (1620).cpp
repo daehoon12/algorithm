@@ -33,7 +33,7 @@ int main()
 
 		else
 		{
-			map <string, int> ::iterator iter = mp.find(s); // map, set이 이진탐색 기반
+			map <string, int> ::iterator iter = mp.find(s); // O(logN)
 			cout << (*iter).second << '\n';
 		}
 	}
