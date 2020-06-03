@@ -32,7 +32,7 @@ int main()
 
 	}
 	if (!idx) // idx 값이 0 == 모든 문자열 폭발
-		cout << "FRULA\n";
+		cout << "FRULA";
 	
 	for (int i = 0; i < idx; i++)
 		cout << answer[i];
