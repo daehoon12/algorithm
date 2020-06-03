@@ -12,7 +12,7 @@ int main()
 	int idx = 0;
 	for (int i = 0; i < s.length(); i++)
 	{
-		answer[idx++] = s[i];
+		answer[idx++] = s[i]; // 일단 추가하고
 		if (bomb[bomb.size() - 1] == answer[idx-1])
 		{
 			if (idx - bomb.length() < 0)
@@ -31,6 +31,9 @@ int main()
 		}
 
 	}
+	if (!idx) // idx 값이 0 == 모든 문자열 폭발
+		cout << "FRULA\n";
+	
 	for (int i = 0; i < idx; i++)
 		cout << answer[i];
 	return 0;
