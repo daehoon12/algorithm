@@ -21,8 +21,3 @@ int solution(vector<int> nums)
         answer = cnt;
         
 }
-
-int main()
-{
-    return 0;
-}
