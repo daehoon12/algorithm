@@ -57,9 +57,3 @@ int solution(string dartResult) {
         answer += temp[i];
     return answer;
 }
-
-int main()
-{
-    solution("1S*2T*3S");
-    return 0;
-}
