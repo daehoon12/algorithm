@@ -1,40 +1,59 @@
-#include <iostream>
-#include <algorithm>
-
+#include <string>
+#include <vector>
+#include <cmath>
 using namespace std;
 
-void map(int *a, int *b)
-{
-    if (*a % 2 == 0)
-        *a /= 2;
-    else if (*a % 2 == 1)
-        *a = *a / 2 + 1;
-    
-    if (*b % 2 == 0)
-        *b /= 2;
-    else if (*b % 2 == 1)
-        *b = *b / 2 + 1;
-}
-int solution(int n, int a, int b)
-{
-    int answer = 1;
-    int toner = n;
-    
-    while (true)
+int solution(string dartResult) {
+    int answer = 0;
+    vector<int> temp;
+    int idx = 0;
+    string s = "";
+    for (int i = 0; i < dartResult.size(); i++)
     {
-        answer++;
-        map(&a,&b);
-        if ((a + 1 == b || b + 1 == a) && max(a, b) % 2 == 0)
+        if (dartResult[i] == 'S')
         {
-            break;
+            int num = stoi(s);
+            int num2= pow(num, 1);
+            temp.push_back(num2);
+            idx++;
+            s = "";
         }
-        
+        else if (dartResult[i] == 'D')
+        {
+            int num = stoi(s);
+            int num2 = pow(num, 2);
+            temp.push_back(num2);
+            idx++;
+            s = "";
+        }
+        else if (dartResult[i] == 'T')
+        {
+            int num = stoi(s);
+            int num2 = pow(num, 3);
+            temp.push_back(num2);
+            idx++;
+            s = "";
+        }
+        else if (dartResult[i] == '*')
+        {
+            temp[idx-1] *= 2;
+            if (idx > 1)
+            {
+                temp[idx - 2] *= 2;
+            }
+        }
+        else if (dartResult[i] == '#')
+        {
+            int num = temp[temp.size() - 1];
+            temp.pop_back();
+            temp.push_back(num * -1);
+        }
+        else
+        {
+            s += dartResult[i];
+        }
     }
-    
+    for (int i = 0; i < temp.size(); i++)
+        answer += temp[i];
     return answer;
-}
-
-int main()
-{
-    cout << solution(8, 1, 2);
 }
