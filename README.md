@@ -9,5 +9,5 @@
 4. Graph : 소수 경로 (1963), 스타트 링크 (5014), 결혼식 (5567)
 5. Simulation : 가르침 (1062) 
 6. Backtraking : 산업 스파이의 편지 (3671), N-Queen (9663)
-7. Dynamic Programming : RGB거리 (1149), 쉬운 계단 수 (10844)
+7. Dynamic Programming : 쉬운 계단 수 (10844)
 8. String : 문자열 폭발 (9935)
