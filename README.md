@@ -10,4 +10,4 @@
 5. Simulation : 가르침 (1062) 
 6. Backtraking : 산업 스파이의 편지 (3671), N-Queen (9663)
 7. Dynamic Programming : 쉬운 계단 수 (10844)
-8. String : 문자열 폭발 (9935)
+8. String : 문자열 폭발 (9935) 
