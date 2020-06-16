@@ -55,7 +55,7 @@ bool bfs(vector<pair<int, int>>& v, char color)
 			}
 		}
 
-		if (cnt >= 4)
+		if (cnt >= 4) // 같은 색깔을 4개 이상 찾으면 뿌요를 터트리는 코드
 		{
 			return_flag = true;
 			for (int y = 0; y < 12; y++)
@@ -68,12 +68,12 @@ bool bfs(vector<pair<int, int>>& v, char color)
 			}
 		}
 	}
-	if (return_flag == true)
+	if (return_flag == true) // 터트렸으면 T 안 됐으면 F
 		return true;
 	else
 		return false;
 }
-vector<pair<int, int>> make_color(char color)
+vector<pair<int, int>> make_color(char color) // color의 좌표를 벡터에 담는 함수.
 {
 	vector<pair<int, int>> temp;
 	for (int y = 0; y < 12; y++)
@@ -86,7 +86,7 @@ vector<pair<int, int>> make_color(char color)
 	}
 	return temp;
 }
-void down_map() // 3�� for���� �̿��� map�� 1
+void down_map() // 3중 for문을 이용해 map을 한단계 아래로 내리는 과정.
 {
 	for (int z = 0; z < 12; z++)
 	{
@@ -121,14 +121,13 @@ int main()
 		bool y = bfs(y_lo, 'Y');
 		bool p = bfs(p_lo, 'P');
 
-		if (r || g || b || y || p)
+		if (r || g || b || y || p) // 하나의 색깔이라도 터지면 값을 증가시킨다.
 			answer++;
-		if (!r && !g && !b && !y && !p)
+		if (!r && !g && !b && !y && !p) // 전부 터지지 않을 경우 반복문을 빠져나감
 			break;
 		down_map();
 		
 	}
-	cout << map[12][6];
 	cout << answer;
 	return 0;
 }
