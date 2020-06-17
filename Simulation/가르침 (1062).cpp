@@ -72,7 +72,7 @@ void dfs(int idx, int cnt)
 
 	for (int i = idx; i < 26; i++)
 	{
-		if (!alpha[i]) // 조합을 
+		if (!alpha[i]) // 알파벳의 수만큼 조합을 구한다. 즉 26Ck
 		{
 			alpha[i] = 1;
 			dfs(i, cnt + 1);
