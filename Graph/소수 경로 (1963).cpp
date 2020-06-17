@@ -1,70 +1,80 @@
 #include <iostream>
 #include <queue>
 #include <string>
+
 using namespace std;
+
 int t;
-int dist[10001];
-bool primeNum[10001];
+int arr[10001];
+
+queue<string> q;
+
 void eratos()
 {
-	for (int i = 0; i < 10001; i++)
-		primeNum[i] = true;
-	for (int i = 2; i < 10001; i++)
+	for (int i = 1; i < 10000; i++)
 	{
-		if (primeNum[i] == false)
+		arr[i] = 0;
+	}
+	for (int i = 2; i < 10000; i++)
+	{
+		if (arr[i] == -1)
 			continue;
-		for (int j = i+i ; j < 10001; j += i)
+		for (int j = i + i; j < 10000; j += i)
 		{
-			primeNum[j] = false;
+			if(arr[j]==0)
+				arr[j] = -1;
 		}
 	}
 }
-string startNum, endNum;
 
-void bfs(string start)
+bool bfs(string start_num, string end_num) 
 {
-	queue <string> q;
-	q.push(start);
-	dist[stoi(start)] = 0;
+	q.push(start_num);
+	arr[stoi(start_num)] = 0;
 	while (!q.empty())
 	{
-
 		string temp = q.front();
-		string defalutNum = temp;
-		//cout << temp << "->" << " ";
-		if (stoi(temp) == stoi(endNum))
-		{
-			cout << dist[stoi(temp)] << '\n';
-			return;
-		}
-
 		q.pop();
+		if (temp == end_num)
+		{
+			return true;
+		}
 		for (int i = 3; i >= 0; i--)
 		{
-			temp = defalutNum;
+			string temp2 = temp;
 			for (int j = 0; j < 10; j++)
 			{
-				temp[i] = j + '0';
-				int idx = stoi(temp);
-				if (idx >=1000 && primeNum[idx] && dist[idx] == -1)
+				temp2.erase(temp2.begin() + i);
+				char ch = j + '0';
+				temp2.insert(temp2.begin() + i, ch);
+				if (temp2 == temp)
+					continue;
+				int idx = stoi(temp2);
+				if (stoi(temp2) >= 1000 && arr[idx] == 0)
 				{
-					q.push(temp);
-					dist[idx] = dist[stoi(defalutNum)] + 1;
+					arr[idx] = arr[(stoi(temp))] + 1;
+					q.push(temp2);
 				}
 			}
 		}
 	}
-	cout << "Impossible" << '\n';
+	return false;
 }
+
 int main()
 {
 	cin >> t;
-	eratos();
 	for (int i = 0; i < t; i++)
 	{
-		cin >> startNum >> endNum;
-		memset(dist, -1, sizeof(dist));
-		bfs(startNum);
+		string start_num, end_num;
+		cin >> start_num >> end_num;
+		eratos();
+		if (bfs(start_num, end_num))
+			cout << arr[stoi(end_num)] << '\n';
+		else
+			cout << "Impossble" << '\n';
+		while (!q.empty())
+			q.pop();
 	}
+	return 0;
 }
-
