@@ -25,7 +25,7 @@ void eratos()
 				arr[j] = -1;
 		}
 	}
-}
+} 
 
 bool bfs(string start_num, string end_num) 
 {
