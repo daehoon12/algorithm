@@ -48,9 +48,3 @@ vector<int> solution(string msg) {
     }
     return answer;
 }
-
-int main()
-{
-    solution("KAKAO");
-    return 0;
-}
