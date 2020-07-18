@@ -1,9 +1,12 @@
 #include <string>
-#include <vector> 
+#include <vector>
 #include <algorithm>
-#include <iostream>
+
 using namespace std;
+
+vector<string> tuples;
 bool visit[100001];
+
 bool cmp(string a, string b)
 {
     if (a.size() < b.size())
@@ -11,7 +14,6 @@ bool cmp(string a, string b)
     else
         return false;
 }
-vector<string> tuples;
 
 void make_tuples(string s)
 {
