@@ -79,12 +79,3 @@ vector<int> solution(string s) {
     
     return answer;
 }
-
-int main()
-{
-    string s = "{{4,2,3},{3},{2,3,4,1},{2,3}}";
-    vector<int> answer = solution(s);
-    for (int i = 0; i < answer.size(); i++)
-        cout << answer[i];
-    return 0;
-}
