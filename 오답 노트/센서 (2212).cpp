@@ -18,6 +18,7 @@ void input()
 		v.push_back(num);
 	}
 }
+
 int main()
 {
 	int answer = 0;
