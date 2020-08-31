@@ -40,11 +40,12 @@ void Union(int x, int y) {
 	x = Find(x); // 2, 3
 	y = Find(y);
 
-	if (x < y) // ´õ ÀÛÀº idx°¡ ºÎ¸ð°¡ µÊ 
+	if (x < y) // Â´Ãµ Ã€Ã›Ã€Âº idxÂ°Â¡ ÂºÃŽÂ¸Ã°Â°Â¡ ÂµÃŠ 
 		parent[y] = x;
 	else
 		parent[x] = y;
 }
+
 int main()
 {
 	int answer = 0;
@@ -85,7 +86,6 @@ int main()
 		if (flag)
 			answer++;
 	}
-
 	cout << answer;
 	return 0;
 }
