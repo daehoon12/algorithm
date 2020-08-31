@@ -20,9 +20,9 @@ void input()
 		}
 	}
 }
+
 int main()
-{
-	
+{	
 	input();
 	for (int y = 2; y <= n; y++)
 	{
