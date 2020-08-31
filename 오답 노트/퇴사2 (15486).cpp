@@ -4,8 +4,10 @@
 using namespace std;
 
 int N;
+
 int dp[15000001];
 pair<int, int> timetable[15000001];
+
 void input()
 {
 	cin >> N;
@@ -14,6 +16,7 @@ void input()
 		cin >> timetable[i].first >> timetable[i].second;
 	}
 }
+
 int main()
 {
 	input();
