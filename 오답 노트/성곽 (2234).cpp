@@ -6,11 +6,13 @@
 using namespace std;
 
 int n, m;
+int answer1, answer2, answer3;
+
 int dx[] = { -1,0,1,0 };
 int dy[] = { 0,-1,0,1 };
 int map[51][51];
 bool visit[51][51];
-int answer1, answer2, answer3;
+
 void input()
 {
 	cin >> m >> n;
