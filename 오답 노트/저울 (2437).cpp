@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-int n,
+int n,answer;
 int weight[1001];
 
 int main()
@@ -22,4 +22,3 @@ int main()
 	cout << answer + 1;
 	return 0;
 }
- 
