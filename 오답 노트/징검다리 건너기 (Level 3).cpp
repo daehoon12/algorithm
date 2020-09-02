@@ -43,7 +43,7 @@ int solution(vector<int> stones, int k) {
     }
     return answer;
 }
-
+ 
 int main()
 {
     solution({ 2,4,5,3,2,1,4,2,5,1 }, 3);
