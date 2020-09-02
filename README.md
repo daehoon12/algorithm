@@ -1,8 +1,8 @@
 # Introduction
 
 ### Baekjoon Online Judge
-- [My Profile](https://www.acmicpc.net/user/foreat13)
-- [My Tier](https://solved.ac/profile/foreat13)
+- [Profile](https://www.acmicpc.net/user/foreat13)
+- [Tier](https://solved.ac/profile/foreat13)
 
 ### Programmers
 - [Programmers](https://programmers.co.kr/learn/challenges?tab=all_challenges)
