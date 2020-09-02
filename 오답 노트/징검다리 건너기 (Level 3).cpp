@@ -11,7 +11,7 @@ bool check(int mid, int k, vector<int> stones)
     for (int i = 0; i < stones.size(); i++)
     {
         stones[i] -= mid;
-        if (stones[i] < 0)
+        if (stones[i] < 0) // mid명이 다리를 건넌 후의 다리 상태
             cnt++;
         else
             cnt = 0;
@@ -26,10 +26,12 @@ int solution(vector<int> stones, int k) {
     int answer = 0;
     int low = 1;
     int high = *max_element(stones.begin(), stones.end());
+    
     while (true)
     {
         if (low > high)
             break;
+        
         int mid = (low + high) / 2;
         if (check(mid, k, stones))
         {
