@@ -1,11 +1,11 @@
 # Introduction
 
 ### Baekjoon Online Judge
-- [Profile](https://www.acmicpc.net/user/foreat13/)
-- [Gold 3](https://solved.ac/profile/foreat13/)
+- [My Profile](https://www.acmicpc.net/user/foreat13/)
+- [My Tier](https://solved.ac/profile/foreat13/)
 
 ### Programmers
-- [Programmers] (https://programmers.co.kr/learn/challenges?tab=all_challenges)
+- [Programmers](https://programmers.co.kr/learn/challenges?tab=all_challenges)
 
   
 - 다시 풀어야할 문제 
