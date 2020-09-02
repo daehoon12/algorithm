@@ -62,13 +62,13 @@ int bfs(int y, int x)
 					q.push(make_pair(cy, cx));
 				}
 			}
-			idx <<= 1;
+			idx <<= 1; // 1 -> 2 -> 4 ->8
 		}
 	}
 	return ret;
 }
 
-void find_answer1_2()
+void find_answer1_2() // 부분 그래프와 가장 큰 부분 그래프를 찾는 함수
 {
 	for (int y = 0; y < n; y++)
 	{
@@ -84,7 +84,7 @@ void find_answer1_2()
 	}
 }
 
-void find_answer3()
+void find_answer3() // 브루트 포스 기반으로 벽을 뚫었을 때 가장 큰 부분 그래프를 찾는 함수
 {
 	int k = 0;
 	for (k = 1; k <= 8; k *= 2)
