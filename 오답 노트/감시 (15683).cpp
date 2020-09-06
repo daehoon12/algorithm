@@ -31,7 +31,7 @@ void copyMap(int map[][9], int temp_map[][9])
 }
 
 void input()
-{
+{ 
 	cin >> N >> M;
 	for (int y = 0; y < N; y++)
 	{
