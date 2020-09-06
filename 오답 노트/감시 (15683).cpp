@@ -129,7 +129,7 @@ void dfs(int cnt)
 	int y = cctv[cnt].y;
 	int x = cctv[cnt].x;
 	int cc_num = cctv[cnt].number;
-	int temp_map[9][9];
+	int temp_map[9][9]; // temp_map을 전역으로 두면 이전에 실행했던 값이 저장되서 답이 나오지 않는다.
 	copyMap(temp_map, map); // 맵의 상태를 temp_map으로 옮김
 
 	if (cc_num == 1)
