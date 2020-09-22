@@ -8,7 +8,7 @@
 - [Programmers](https://programmers.co.kr/learn/challenges?tab=all_challenges)
 
   
-- 다시 풀어야할 문제 
+- 다시 풀어야할 문제  
 
 1. Brute Force : 덩치 (7568)   
 2. Greedy Alrogithm : 저울 (2437), 큰 수 만들기 (Level 2)
