@@ -6,9 +6,10 @@
 
 using namespace std;
 
+pair<int, int > start_point, end_point;
 int W, H;
-char graph[101][101];
 
+char graph[101][101];
 int dx[] = { 0,1,0,-1 }; // 북 동 남 서
 int dy[] = { -1,0,1,0 };
 int visit[101][101];
@@ -24,7 +25,7 @@ public:
 		this->cnt = cnt;
 	}
 };
-pair<int, int > start_point, end_point;
+
 
 void input()
 {
