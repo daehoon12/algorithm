@@ -1,6 +1,6 @@
 # Introduction 
   [![Solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={foreat13})](https://solved.ac/{foreat13})
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=foreat13)](https://solved.ac/foreat13)
 ### Baekjoon Online Judge
 - [Profile](https://www.acmicpc.net/user/foreat13)
 - [Tier](https://solved.ac/profile/foreat13) 
