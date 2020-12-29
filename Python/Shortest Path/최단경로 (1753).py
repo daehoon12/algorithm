@@ -33,5 +33,5 @@ dijkstra(k)
 for i in range(1, n+1):
     if dist[i] == 987654321:
         print("INF")
-    else:
+    else: 
         print(dist[i])
