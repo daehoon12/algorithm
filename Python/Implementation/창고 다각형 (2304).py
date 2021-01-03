@@ -7,7 +7,7 @@ for _ in range(n):
     idx, size = map(int, sys.stdin.readline().strip().split())
     info[idx]=size
 
-info2 = sorted(info.items())
+info2 = sorted(info.items()) # 딕셔너리 정렬방법, 딕셔너리 원소는 리스트 안에 튜플로 생성된다.
 answer=0
 max_idx=0
 max_size =0
@@ -20,7 +20,7 @@ for i in range(len(info2)):
         max_idx = info2[i][0]
 answer += max_size
 
-temp = info.get(min_start)
+temp = info.get(min_start) # get 함수는 info에 값이 없으면 None을 반환한다.
 for i in range(min_start, max_idx):
     if info.get(i) == None:
         answer += temp
@@ -29,8 +29,9 @@ for i in range(min_start, max_idx):
         answer += temp
     else:
         answer += temp
+        
 temp = info.get(max_start)
-for i in range(max_start, max_idx, -1):
+for i in range(max_start, max_idx, -1): # start, stop, reverse 반드시 기억하기.
     if info.get(i) == None:
         answer += temp
     elif info.get(i) > temp:
@@ -38,4 +39,5 @@ for i in range(max_start, max_idx, -1):
         answer += temp
     else:
         answer += temp
+        
 print(answer)
