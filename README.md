@@ -26,5 +26,3 @@
 5. Simulation : Puyo Puyo (11559)
 6. Backtraking : 좋은수열 (2661), N-Queen (9663)
 7. Dynamic Programming : 쉬운 계단 수 (10844)
-
- 
