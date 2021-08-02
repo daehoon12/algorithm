@@ -17,3 +17,6 @@
 ## 투 포인터 (Two Pointers) Algorithm  
 - **시작점과 끝점 or 왼쪽 포인터와 오른쪽 포인터 두 지점을 기준**으로 하는 문제 풀이 전략  
 - 선형 자료구조에서 풀이 시간을 줄여주는 알고리즘.  
+
+## 문제  
+https://leetcode.com/problems/longest-palindromic-substring/
