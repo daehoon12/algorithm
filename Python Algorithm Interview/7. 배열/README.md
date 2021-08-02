@@ -19,4 +19,4 @@
 - 선형 자료구조에서 풀이 시간을 줄여주는 알고리즘.  
 
 ## 문제  
-https://leetcode.com/problems/longest-palindromic-substring/
+[5. Longest Palindromic Substring]: https://leetcode.com/problems/longest-palindromic-substring/
