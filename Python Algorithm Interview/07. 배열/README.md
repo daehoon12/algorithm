@@ -20,7 +20,7 @@
 
 ## 문제  
 
-### 문자열 조작  
+### 문자열 
 
 [01. Valid Palindrome]: https://leetcode.com/problems/valid-palindrome/
 [02. Reverse String]: https://leetcode.com/problems/reverse-string/
