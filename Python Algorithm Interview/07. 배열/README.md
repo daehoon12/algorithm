@@ -19,5 +19,12 @@
 - 선형 자료구조에서 풀이 시간을 줄여주는 알고리즘.  
 
 ## 문제  
-[5. Longest Palindromic Substring]: https://leetcode.com/problems/longest-palindromic-substring/
-[5. Longest Palindromic Substring]
+
+### 문자열 조작  
+
+[01. Valid Palindrome]: https://leetcode.com/problems/valid-palindrome/
+[02. Reverse String]: https://leetcode.com/problems/reverse-string/
+[03. Reorder Data in Log Files]: https://leetcode.com/problems/reorder-data-in-log-files/
+[04. Most Common Word]: https://leetcode.com/problems/most-common-word/
+[05. Group Anagrams]: https://leetcode.com/problems/group-anagrams/
+[06. Longest Palindromic Substring]: https://leetcode.com/problems/longest-palindromic-substring/
